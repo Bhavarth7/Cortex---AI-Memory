@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.local
+.env
+
+# TypeScript build emit artifacts
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts

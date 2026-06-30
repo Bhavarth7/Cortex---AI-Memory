@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+@theme {
+  --color-base-950: #06080c;
+  --color-base-900: #0a0d14;
+  --color-base-850: #0e121b;
+  --color-base-800: #141925;
+  --color-base-700: #1c2334;
+  --color-line: rgba(255, 255, 255, 0.07);
+  --color-line-strong: rgba(255, 255, 255, 0.12);
+
+  --color-ink: #e7ecf3;
+  --color-ink-soft: #9aa6b9;
+  --color-ink-faint: #5d6779;
+
+  --color-accent: #22d3ee;
+  --color-accent-soft: #67e8f9;
+  --color-violet: #8b5cf6;
+  --color-good: #34d399;
+  --color-warn: #fbbf24;
+  --color-bad: #fb7185;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-base-950);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(60rem 40rem at 78% -10%, rgba(34, 211, 238, 0.08), transparent 60%),
+      radial-gradient(50rem 36rem at 10% 0%, rgba(139, 92, 246, 0.07), transparent 55%);
+    background-attachment: fixed;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-base-700);
+    border-radius: 999px;
+    border: 2px solid var(--color-base-950);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a3346;
+  }
+}
+
+@layer components {
+  .panel {
+    background: linear-gradient(180deg, var(--color-base-850), var(--color-base-900));
+    border: 1px solid var(--color-line);
+    border-radius: 1rem;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.03) inset,
+      0 18px 40px -24px rgba(0, 0, 0, 0.9);
+  }
+
+  .glass {
+    background: rgba(10, 13, 20, 0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .num {
+    font-family: var(--font-mono);
+    font-feature-settings: "tnum" 1;
+    letter-spacing: -0.01em;
+  }
+
+  .hairline {
+    background: var(--color-line);
+  }
+}
+
+/* React Flow theming overrides */
+.react-flow__edge-path {
+  stroke-width: 1.5;
+}
+.react-flow__attribution {
+  display: none;
+}
+.react-flow__background {
+  opacity: 0.5;
+}

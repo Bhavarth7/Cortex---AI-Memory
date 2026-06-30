@@ -1,0 +1,38 @@
+{
+  "planner_agent": {
+    "system_design": 0.65,
+    "cost_reasoning": 0.55,
+    "risk_detection": 0.50,
+    "implementation_planning": 0.75
+  },
+  "research_agent": {
+    "system_design": 0.55,
+    "cost_reasoning": 0.55,
+    "risk_detection": 0.55,
+    "implementation_planning": 0.55
+  },
+  "architecture_agent": {
+    "system_design": 0.75,
+    "cost_reasoning": 0.55,
+    "risk_detection": 0.50,
+    "implementation_planning": 0.70
+  },
+  "execution_agent": {
+    "system_design": 0.60,
+    "cost_reasoning": 0.55,
+    "risk_detection": 0.50,
+    "implementation_planning": 0.80
+  },
+  "risk_agent": {
+    "system_design": 0.55,
+    "cost_reasoning": 0.50,
+    "risk_detection": 0.80,
+    "implementation_planning": 0.55
+  },
+  "evaluator_agent": {
+    "system_design": 0.60,
+    "cost_reasoning": 0.60,
+    "risk_detection": 0.60,
+    "implementation_planning": 0.60
+  }
+}
