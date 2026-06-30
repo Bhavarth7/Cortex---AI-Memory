@@ -1,5 +1,8 @@
 # Cortex
 
+[![CI](https://github.com/Bhavarth7/Cortex---AI-Memory/actions/workflows/ci.yml/badge.svg)](https://github.com/Bhavarth7/Cortex---AI-Memory/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22d3ee.svg)](LICENSE)
+
 Memory-augmented, reputation-weighted multi-agent system for complex AI/product engineering planning. Given an ambiguous technical problem, Cortex runs a team of specialist LLM agents that propose, critique, revise, vote, and reach reputation-weighted consensus — then remembers the outcome so similar future tasks improve.
 
 See [`SPEC.md`](SPEC.md) for the full design.
@@ -72,3 +75,7 @@ cortex/
 ```
 
 Built for the Qwen / Alibaba Cloud hackathon — defaults to Qwen Cloud, falls back to a deterministic mock for local testing.
+
+## License
+
+[MIT](LICENSE) © Bhavarth Bhangdia
