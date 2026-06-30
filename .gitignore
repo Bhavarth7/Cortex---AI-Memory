@@ -19,8 +19,8 @@ htmlcov/
 .env.*
 !.env.example
 
-# ---- Data / local SQLite ----
-data/
+# ---- Data / local SQLite (repo root only) ----
+/data/
 *.db
 *.sqlite
 *.sqlite3
